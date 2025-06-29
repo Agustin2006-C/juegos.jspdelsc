@@ -1,0 +1,39 @@
+<!-- Contenido de ppt.ejs --><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piedra Papel o Tijeras</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <h1 class="titulo">Piedra, Papel o Tijeras</h1>
+
+  <!-- Formulario para nombres y modo -->
+  <form id="ppt-form">
+    <input type="text" id="ppt-player1" placeholder="Nombre del Jugador 1" required />
+    <select id="ppt-mode">
+      <option value="2">Contra otro jugador</option>
+      <option value="1">Contra la máquina</option>
+    </select>
+    <input type="text" id="ppt-player2" placeholder="Nombre del Jugador 2" />
+    <button type="submit">Jugar</button>
+    <button onclick="location.href='/'">Volver al inicio</button>
+
+  </form>
+
+  <!-- Zona de juego -->
+  <div id="ppt-game" class="oculto">
+    <h2 id="ppt-turno"></h2>
+    <div id="ppt-opciones" class="opciones">
+      <button onclick="seleccionar('piedra')">🪨 Piedra</button>
+      <button onclick="seleccionar('papel')">📄 Papel</button>
+      <button onclick="seleccionar('tijera')">✂️ Tijera</button>
+    </div>
+    <p id="ppt-resultado"></p>
+<button onclick="location.href='/'">Volver al inicio</button>
+  </div>
+
+  <script src="/js/ppt.js"></script>
+</body>
+</html>

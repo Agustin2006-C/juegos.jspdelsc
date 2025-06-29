@@ -1,0 +1,38 @@
+<!-- Contenido de tateti.ejs --><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaTeTi</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <h1 class="titulo">TaTeTi</h1>
+
+  <!-- Formulario para nombres y modo de juego -->
+  <form id="tateti-form">
+    <input type="text" id="player1" placeholder="Nombre del Jugador 1" required />
+    <select id="mode">
+      <option value="2">Contra otro jugador</option>
+      <option value="1">Contra la máquina</option>
+    </select>
+    <input type="text" id="player2" placeholder="Nombre del Jugador 2" />
+    <button type="submit">Iniciar Juego</button>
+    <button onclick="location.href='/'">Volver al inicio</button>
+
+  </form>
+
+  <!-- Tablero de juego -->
+  <div id="tateti-container" class="oculto">
+    <h2 id="turno"></h2>
+    <div class="tablero">
+      <% for(let i = 0; i < 9; i++) { %>
+        <div class="casilla" data-index="<%= i %>"></div>
+      <% } %>
+    </div>
+<button onclick="location.href='/'">Volver al inicio</button>
+  </div>
+
+  <script src="/js/tateti.js"></script>
+</body>
+</html>

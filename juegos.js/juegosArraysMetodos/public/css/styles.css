@@ -1,0 +1,133 @@
+/* Agrega aquí el contenido de tu CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://media.istockphoto.com/id/1333010525/es/vector/ilustraci%C3%B3n-simple-de-pixel-art-plano-de-fondo-de-paisaje-al-aire-libre-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=vTVAVSCa_hAV8k0CIy3T5z27FtvL-RRA4DW1Sw1ARxA=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.titulo {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.contenedor-juegos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+  gap: 40px;
+}
+
+.juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.juego:hover {
+  transform: scale(1.05);
+}
+
+.juego img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.juego p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.oculto {
+  display: none;
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.casilla {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: white;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.opciones {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.opciones button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.opciones button:hover {
+  background-color: #45a049;
+}
+
+#ppt-resultado {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.simon-container {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-simon {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.btn-simon.activo {
+  opacity: 1;
+  box-shadow: 0 0 20px white;
+}
+
+.rojo { background-color: red; }
+.verde { background-color: green; }
+.azul { background-color: blue; }
+.amarillo { background-color: yellow; }

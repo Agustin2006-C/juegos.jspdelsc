@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simón Dice</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <h1 class="titulo">Simón Dice</h1>
+
+  <!-- Formulario para nombre -->
+  <form id="simon-form" class="formulario">
+    <input type="text" id="simon-player" placeholder="Nombre del Jugador" required />
+    <button type="submit">Iniciar</button>
+    <button onclick="location.href='/'">Volver al inicio</button>
+
+  </form>
+
+  <!-- Zona de juego -->
+  <div id="simon-game" class="oculto">
+    <h2 id="simon-turno"></h2>
+    <div class="simon-container">
+      <div class="btn-simon rojo" id="rojo"></div>
+      <div class="btn-simon verde" id="verde"></div>
+      <div class="btn-simon azul" id="azul"></div>
+      <div class="btn-simon amarillo" id="amarillo"></div>
+    </div>
+    <p id="simon-status"></p>
+
+    <!-- Botón para volver -->
+<button onclick="location.href='/'">Volver al inicio</button>
+  </div>
+
+  <script src="/js/simon.js"></script>
+</body>
+</html>
